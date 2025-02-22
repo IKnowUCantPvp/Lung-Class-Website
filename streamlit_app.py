@@ -144,7 +144,7 @@ if uploaded_file is not None:
         log_mel_spec = librosa.power_to_db(mel_spec, ref=np.max)
 
         # Compute a PCEN spectrogram from the same mel spectrogram.
-        pcen_spec = librosa.core.pcen(mel_spec, time_constant=0.007, power=0.85, bias=5.5, gain=0.7, eps=1E-08, b=0.5)
+        pcen_spec = librosa.core.pcen(mel_spec, time_constant=0.007, power=0.85, bias=5.5, gain=0.7, eps=1E-08)
 
         # Plot both spectrograms side by side.
         fig_spec, (ax1, ax2) = plt.subplots(1, 2, figsize=(14, 5))
