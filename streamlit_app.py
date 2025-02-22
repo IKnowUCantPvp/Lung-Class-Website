@@ -1,15 +1,15 @@
 import streamlit as st
 
-st.title('🩺Lung Sound Classificaiton App')
-
-st.write('This app is built off of a research project researching the uasge of utilizing Per Channel Energy Normalization to classify lung sounds!')
-
-
+st.title('🩺 Lung Sound Classification App')
+st.write(
+    "This app is built off of a research project exploring the usage of Per Channel Energy Normalization "
+    "to classify lung sounds. Upload an audio file below to see the classification!"
+)
 
 # Load your pre-trained model from the repository.
 # The model directory should contain the saved_model.pb file and related assets.
 MODEL_DIR = "./my_lung_sound_model"  # Adjust this relative path as needed.
-model = tf.saved_model.load(saved_model.pb)
+model = tf.saved_model.load(MODEL_DIR)
 # Get the default serving function from the model.
 inference_func = model.signatures["serving_default"]
 
@@ -58,7 +58,7 @@ def preprocess_audio(file_path):
 
 def predict_class(audio_file):
     """
-    Writes the uploaded audio file to a temporary file, preprocesses it,
+    Saves the uploaded audio file to a temporary file, preprocesses it,
     and uses the loaded model to predict the lung sound classification.
     """
     # Save the uploaded audio file temporarily.
@@ -85,10 +85,8 @@ def predict_class(audio_file):
     predicted_label = CLASS_NAMES.get(predicted_index, "Unknown")
     return predicted_label
 
-# Streamlit UI
-st.title("Lung Sound Classification")
+# Streamlit UI for file upload and prediction.
 st.write("Upload an audio file to classify the lung sound.")
-
 uploaded_file = st.file_uploader("Choose an audio file", type=["wav", "mp3", "ogg"])
 
 if uploaded_file is not None:
