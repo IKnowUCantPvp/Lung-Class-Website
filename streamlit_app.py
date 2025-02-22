@@ -4,28 +4,28 @@ st.title('🩺Lung Sound Classificaiton App')
 
 st.write('This app is built off of a research project researching the uasge of utilizing Per Channel Energy Normalization to classify lung sounds!')
 
-import streamlit as st
-import numpy as np
-import librosa
-import tensorflow as tf
-import os
-import tempfile
+
 
 # Load your pre-trained model from the repository.
 # The model directory should contain the saved_model.pb file and related assets.
 MODEL_DIR = "./my_lung_sound_model"  # Adjust this relative path as needed.
-model = tf.saved_model.load(MODEL_DIR)
+model = tf.saved_model.load(saved_model.pb)
 # Get the default serving function from the model.
 inference_func = model.signatures["serving_default"]
 
 # Mapping from class indices to human-readable labels.
 # Adjust these labels to match your model's training.
 CLASS_NAMES = {
-    0: "Normal",
-    1: "Crackles",
-    2: "Wheezes",
-    3: "Both",
-    4: "Other"
+    0: "Asthma",
+    1: "Bronchiectasis",
+    2: "Bronchiolitis",
+    3: "COPD",
+    4: "Healthy"
+    5: "Heart_Failure"
+    6: "Lung_Fibrosis"
+    7: "Pleural Effusion"
+    8: "Pneumonia"
+    9: "URTI"
 }
 
 def preprocess_audio(file_path):
