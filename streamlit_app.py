@@ -8,8 +8,7 @@ import tempfile
 import matplotlib.pyplot as plt
 import pandas as pd
 from PIL import Image
-import requests
-from io import BytesIO
+import cv2
 
 # ------------------------------------------------------------------------------
 # About This Project
@@ -17,8 +16,9 @@ from io import BytesIO
 
 st.title('🩺 Lung Sound Classification App')
 
-image = Image.open('Spec_PCEN_Comparison')
-st.image(image)
+#image = Image.open('Spec_PCEN_Comparison.png')
+image = cv2.imread("Spec_PCEN_Comparison.png")
+st.image(image, caption="Comparison of Spectrogram and PCEN", use_container_width=True)
 
 st.markdown("""
 **About This Project**
