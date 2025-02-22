@@ -7,14 +7,16 @@ import os
 import tempfile
 import matplotlib.pyplot as plt
 import pandas as pd
+from PIL import Image
 
 # ------------------------------------------------------------------------------
 # About This Project
 # ------------------------------------------------------------------------------
 st.title('🩺 Lung Sound Classification App')
 
+img=Image.open('Spec_PCEN_Comparison.png')
 # Display a banner image comparing Spectrogram vs. PCEN
-st.image("https://raw.githubusercontent.com/IKnowUCantPvp/Lung-Class-Website/master/images/Spec_PCEN_Comparison.png", caption="Comparison of Spectrogram and PCEN", use_container_width=True)
+st.image(img, caption="Comparison of Spectrogram and PCEN", use_container_width=True)
 
 st.markdown("""
 **About This Project**
