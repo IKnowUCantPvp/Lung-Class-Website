@@ -17,8 +17,8 @@ import cv2
 st.title('🩺 Lung Sound Classification App')
 
 #image = Image.open('Spec_PCEN_Comparison.png')
-image = cv2.imread("Spec_PCEN_Comparison.png")
-st.image(image, caption="Comparison of Spectrogram and PCEN", use_container_width=True)
+#image = cv2.imread("Spec_PCEN_Comparison.png")
+#st.image(image, caption="Comparison of Spectrogram and PCEN", use_container_width=True)
 
 st.markdown("""
 **About This Project**
