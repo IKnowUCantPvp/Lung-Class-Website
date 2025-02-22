@@ -128,6 +128,7 @@ if uploaded_file is not None:
         rms = np.sqrt(np.mean(waveform ** 2))
 
         st.success(f"Predicted lung sound classification: **{predicted_label}**")
+        st.write(f"**Post-Preprocessing Audio Information**")
         st.write(f"Model Confidence: **{confidence:.2f}%**")
         st.write(f"**Audio Duration:** {duration:.2f} seconds")
         st.write(f"**Sampling Rate:** {sr} Hz")
