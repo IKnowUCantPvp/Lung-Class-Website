@@ -26,7 +26,7 @@ This app is part of our research exploring advanced audio preprocessing techniqu
 - **Limited Dataset – 10 Diagnostic Categories:**  
   Due to the limited data available, our model currently classifies lung sounds into **10 diagnostic categories** (Asthma, Bronchiectasis, Bronchiolitis, COPD, Healthy, Heart Failure, Lung Fibrosis, Pleural Effusion, Pneumonia, and URTI).
 
-For more details on our methodology and results, please refer to our [Research Paper]("Ma_Nathan_Paper.pdf") and view our full project on [GitHub](https://github.com/IKnowUCantPvp/Lung-Sound-Classification-PCEN.git).
+For more details on our methodology and results, please refer to our [Ma_Nathan_Paper](https://github.com/IKnowUCantPvp/Lung-Class-Website/blob/master/Ma_Nathan_Paper.pdf) and view our full project on [GitHub](https://github.com/IKnowUCantPvp/Lung-Sound-Classification-PCEN.git).
 
 Upload an audio file below to classify the lung sound based on our trained model.
 """)
