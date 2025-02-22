@@ -15,7 +15,7 @@ st.title('🩺 Lung Sound Classification App')
 
 # Display a banner image comparing Spectrogram vs. PCEN
 st.image("https://raw.githubusercontent.com/IKnowUCantPvp/Lung-Class-Website/master/images/Spec_PCEN_Comparison.png", caption="Comparison of Spectrogram and PCEN")
-         caption="Comparison of Spectrogram and PCEN", use_container_width=True)
+caption="Comparison of Spectrogram and PCEN", use_container_width=True)
 
 st.markdown("""
 **About This Project**
