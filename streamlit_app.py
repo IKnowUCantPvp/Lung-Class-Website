@@ -26,7 +26,10 @@ This app is part of our research exploring advanced audio preprocessing techniqu
 - **Limited Dataset – 10 Diagnostic Categories:**  
   Due to the limited data available, our model currently classifies lung sounds into **10 diagnostic categories** (Asthma, Bronchiectasis, Bronchiolitis, COPD, Healthy, Heart Failure, Lung Fibrosis, Pleural Effusion, Pneumonia, and URTI).
 
-For more details on our methodology and results, please refer to our [Ma_Nathan_Paper](https://github.com/IKnowUCantPvp/Lung-Class-Website/blob/master/Ma_Nathan_Paper.pdf) and view our full project on [GitHub](https://github.com/IKnowUCantPvp/Lung-Sound-Classification-PCEN.git).
+**Spectrogram Comparison:**  
+Our study compared traditional log-mel spectrograms with PCEN spectrograms. While the log-mel spectrogram provides a view of the frequency content, it is quite sensitive to noise and amplitude variations. In contrast, the PCEN spectrogram applies dynamic normalization to each frequency channel—resulting in a normalized amplitude range (0 to 0.5)—which effectively minimizes background noise and highlights the subtle, transient features of lung sounds. This advantage is crucial in noisy clinical environments and is the reason our model leverages PCEN for input features.
+
+For more details on our methodology and results, please refer to our [Research Paper](https://github.com/IKnowUCantPvp/Lung-Sound-Classification-PCEN/blob/main/Ma_Nathan_Paper.pdf) and view our full project on [GitHub](https://github.com/IKnowUCantPvp/Lung-Sound-Classification-PCEN.git).
 
 Upload an audio file below to classify the lung sound based on our trained model.
 """)
