@@ -168,9 +168,9 @@ if uploaded_file is not None:
         ax1.set_title("Log Mel Spectrogram")
         fig_spec.colorbar(img1, ax=ax1, format="%+2.0f dB")
 
-        # For the PCEN spectrogram, force the amplitude scale from 0 to 0.5.
+        # For the PCEN spectrogram, force the amplitude scale from 0 to 3.
         img2 = librosa.display.specshow(pcen_spec, sr=sr, x_axis='time', y_axis='mel',
-                                        ax=ax2, cmap='magma', norm=plt.Normalize(vmin=0, vmax=0.5))
+                                        ax=ax2, cmap='magma', norm=plt.Normalize(vmin=0, vmax=3))
         ax2.set_title("PCEN Spectrogram")
         fig_spec.colorbar(img2, ax=ax2, format="%.2f")
 
