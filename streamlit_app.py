@@ -8,7 +8,7 @@ st.write(
 
 # Load your pre-trained model from the repository.
 # The model directory should contain the saved_model.pb file and related assets.
-MODEL_DIR = "./my_lung_sound_model"  # Adjust this relative path as needed.
+MODEL_DIR = "./my_model"  # Adjust this relative path as needed.
 model = tf.saved_model.load(MODEL_DIR)
 # Get the default serving function from the model.
 inference_func = model.signatures["serving_default"]
