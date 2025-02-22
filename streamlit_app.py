@@ -20,12 +20,12 @@ CLASS_NAMES = {
     1: "Bronchiectasis",
     2: "Bronchiolitis",
     3: "COPD",
-    4: "Healthy"
-    5: "Heart_Failure"
-    6: "Lung_Fibrosis"
-    7: "Pleural Effusion"
-    8: "Pneumonia"
-    9: "URTI"
+    4: "Healthy",
+    5: "Heart_Failure",
+    6: "Lung_Fibrosis",
+    7: "Pleural Effusion",
+    8: "Pneumonia",
+    9: "URTI",
 }
 
 def preprocess_audio(file_path):
