@@ -11,8 +11,11 @@ import pandas as pd
 # ------------------------------------------------------------------------------
 # About This Project
 # ------------------------------------------------------------------------------
-
 st.title('🩺 Lung Sound Classification App')
+
+# Display a banner image comparing Spectrogram vs. PCEN
+st.image(r"C:\Users\natha\OneDrive\Documents\GitHub\Lung-Class-Website\images\Spec_PCEN_Comparison.png", 
+         caption="Comparison of Spectrogram and PCEN", use_column_width=True)
 
 st.markdown("""
 **About This Project**
@@ -27,7 +30,7 @@ This app is part of our research exploring advanced audio preprocessing techniqu
   Due to the limited data available, our model currently classifies lung sounds into **10 diagnostic categories** (Asthma, Bronchiectasis, Bronchiolitis, COPD, Healthy, Heart Failure, Lung Fibrosis, Pleural Effusion, Pneumonia, and URTI).
 
 **Spectrogram Comparison:**  
-Our study compared traditional log-mel spectrograms with PCEN spectrograms. While the log-mel spectrogram provides a view of the frequency content, it is quite sensitive to noise and amplitude variations. In contrast, the PCEN spectrogram applies dynamic normalization to each frequency channel—resulting in a normalized amplitude range (0 to 0.5)—which effectively minimizes background noise and highlights the subtle, transient features of lung sounds. This advantage is crucial in noisy clinical environments and is the reason our model leverages PCEN for input features.
+Our study compared traditional log-mel spectrograms with PCEN spectrograms. While the log-mel spectrogram provides a view of the frequency content, it is quite sensitive to noise and amplitude variations. In contrast, the PCEN spectrogram applies dynamic normalization to each frequency channel, resulting in a normalized amplitude range that effectively minimizes background noise and highlights lung sound's subtle, transient features. This advantage is crucial in noisy clinical environments and is the reason our model leverages PCEN for input features.
 
 For more details on our methodology and results, please refer to our [Research Paper](https://github.com/IKnowUCantPvp/Lung-Sound-Classification-PCEN/blob/main/Ma_Nathan_Paper.pdf) and view our full project on [GitHub](https://github.com/IKnowUCantPvp/Lung-Sound-Classification-PCEN.git).
 
