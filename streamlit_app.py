@@ -14,8 +14,8 @@ import pandas as pd
 st.title('🩺 Lung Sound Classification App')
 
 # Display a banner image comparing Spectrogram vs. PCEN
-st.image(r"C:\Users\natha\OneDrive\Documents\GitHub\Lung-Class-Website\images\Spec_PCEN_Comparison.png", 
-         caption="Comparison of Spectrogram and PCEN", use_column_width=True)
+st.image("Spec_PCEN_Comparison.png",
+         caption="Comparison of Spectrogram and PCEN", use_container_width=True)
 
 st.markdown("""
 **About This Project**
