@@ -1,5 +1,4 @@
 streamlit
-﻿absl-py==2.1.0
 astunparse==1.6.3
 audioread
 Brotli
