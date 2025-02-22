@@ -70,7 +70,6 @@ python-dateutil
 python_speech_features==0.6
 pytorch-pcen @ git+https://github.com/daemon/pytorch-pcen@942c519ad46450ea55cdbfc4afd91d0881927de7
 pytz
-pywin32==308
 requests
 requests-oauthlib==2.0.0
 resampy==0.4.3
