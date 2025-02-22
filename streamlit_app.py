@@ -17,14 +17,8 @@ from io import BytesIO
 
 st.title('🩺 Lung Sound Classification App')
 
-# Use the raw URL to load the image from GitHub
-img_url = "https://raw.githubusercontent.com/IKnowUCantPvp/Lung-Class-Website/master/images/Spec_PCEN_Comparison.png"
-response = requests.get(img_url)
-if response.status_code == 200:
-    img = Image.open(BytesIO(response.content))
-    st.image(img, caption="Comparison of Spectrogram and PCEN", use_container_width=True)
-else:
-    st.error("Error loading image.")
+image = Image.open('\images\Spec_PCEN_Comparison.png')
+st.image(image)
 
 st.markdown("""
 **About This Project**
