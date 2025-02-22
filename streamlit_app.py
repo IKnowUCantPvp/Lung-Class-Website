@@ -17,7 +17,7 @@ st.write(
 
 # Load your pre-trained model from the repository.
 # The model directory should contain the saved_model.pb file and related assets.
-MODEL_DIR = r"C:\Users\natha\OneDrive\Documents\GitHub\Lung-Class-Website\models\FinalModels\clean dataset\Conv2DOldPCEN"
+MODEL_DIR = "Conv2DOldPCEN"
 model = tf.saved_model.load(MODEL_DIR)
 # Get the default serving function from the model.
 inference_func = model.signatures["serving_default"]
