@@ -17,7 +17,7 @@ from io import BytesIO
 
 st.title('🩺 Lung Sound Classification App')
 
-image = Image.open('\images\Spec_PCEN_Comparison.png')
+image = Image.open('images\Spec_PCEN_Comparison.png')
 st.image(image)
 
 st.markdown("""
